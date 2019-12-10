@@ -166,7 +166,8 @@ enable_opt hwaccels
 
 add_elf_flags() {
   # -Wl,-z,noexecstack -Wl,--as-needed is added by configure
-  EXTRA_CFLAGS+=" -Wa,--noexecstack -fdata-sections -ffunction-sections -fstack-protector-strong" # TODO: check -fstack-protector-strong
+#  EXTRA_CFLAGS+=" -Wa,--noexecstack -fdata-sections -ffunction-sections -fstack-protector-strong" # TODO: check -fstack-protector-strong
+  EXTRA_CFLAGS+=" -Wa,--noexecstack -fdata-sections -ffunction-sections" # TODO: check -fstack-protector-strong
   EXTRA_LDFLAGS+=" -Wl,--gc-sections" # -Wl,-z,relro -Wl,-z,now
   # rpath
 }

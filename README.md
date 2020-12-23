@@ -14,6 +14,13 @@ cp config-lite.sh config.sh
 ./avbuild.sh ios "arm64 x86_64"
 ./avbuild.sh macos10.13 "x86_64"
 
+缺省编译输出目录
+linux
+sdk-linux-x86_64-gcc/bin
+
+mac
+sdk-macOS10.7-clang/bin
+
 
 It's a tool to build ffmpeg for almost all platforms.
 

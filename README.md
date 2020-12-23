@@ -1,6 +1,6 @@
 编译说明
 brew install yasm
-
+sudo apt install yasm
 
 在mac跨平台编译,定制配置文件名为config.sh
 配置FFSRC环境变量

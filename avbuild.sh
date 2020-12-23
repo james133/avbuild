@@ -37,12 +37,12 @@ test -f $USER_CONFIG &&  . $USER_CONFIG
 # TODO: use USER_OPT only
 # set NDK_ROOT if compile for android
 : ${NDK_ROOT:="$ANDROID_NDK"}
-: ${LIB_OPT:="--enable-shared"}
+: ${LIB_OPT:="--disable-shared"}
 #: ${FEATURE_OPT:="--enable-hwaccels"}
 : ${DEBUG_OPT:="--disable-debug"}
 : ${FORCE_LTO:=false}
 : ${FFSRC:=$PWD/ffmpeg}
-[[ "$LIB_OPT" == *"--disable-static"* ]] && FORCE_LTO=true
+[[ "$LIB_OPT" == *"--enable-static"* ]] && FORCE_LTO=true
 # other env vars to control build: NO_ENC, BITCODE, WINPHONE, VC_BUILD, FORCE_LTO (bool)
 
 trap "kill -- -$$; rm -rf $THIS_DIR/.dir exit 3" SIGTERM SIGINT SIGKILL

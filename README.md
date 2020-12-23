@@ -1,3 +1,20 @@
+编译说明
+brew install yasm
+
+
+在mac跨平台编译,定制配置文件名为config.sh
+配置FFSRC环境变量
+export FFSRC=/Users/yanhua/Downloads/ffmpeg-4.2.1
+cp config-lite.sh config.sh
+./avbuild.sh macos10.13 "x86_64"
+
+./avbuild.sh android "armv7 armv8-clang"
+./avbuild.sh mingw "x86 x86_64"
+./avbuild.sh rpi "armv6-clang-5.0 armv7 armv8"
+./avbuild.sh ios "arm64 x86_64"
+./avbuild.sh macos10.13 "x86_64"
+
+
 It's a tool to build ffmpeg for almost all platforms.
 
 How: https://github.com/wang-bin/avbuild/wiki

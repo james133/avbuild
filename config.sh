@@ -8,6 +8,7 @@ parent_dir=$(dirname $(pwd))
 export COMMON_FF_CFG_FLAGS=
 # export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --prefix=PREFIX"
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS  --extra-cflags=-I$cur_dir/release/include"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS  --extra-cxxflags=-I$cur_dir/release/include"
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS  --extra-ldflags=-lm --extra-ldflags=-ldl --extra-ldflags=-L$cur_dir/release/lib --extra-ldflags=-lx264  --extra-ldflags=-lfdk-aac "
 # Licensing options:
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-gpl"

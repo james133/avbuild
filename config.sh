@@ -1,8 +1,8 @@
 #! /usr/bin/env bash
 cur_dir=$(cd "$(dirname "$0")"; pwd)
 parent_dir=$(dirname $(pwd))
-ADDI_LDFLAGS ="-L${cur_dir}/lib  -lx264 -lfdk-aac"
-ADDI_CFLAGS ="-I${cur_dir}/include"
+#ADDI_LDFLAGS ="-L${cur_dir}/lib  -lx264 -lfdk-aac"
+#ADDI_CFLAGS ="-I${cur_dir}/include"
 #--------------------
 # Standard options:
 export COMMON_FF_CFG_FLAGS=

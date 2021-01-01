@@ -6,3 +6,9 @@ sdk-*/
 sysroot
 /winsdk*
 /msvc*
+deps/faac-1.29.9.2/
+deps/fdk-aac-0.1.6/
+release/
+deps/lame-3.100/
+deps/mp4v2-master/
+deps/x264-master/

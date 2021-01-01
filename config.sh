@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
-
+cur_dir=$(cd "$(dirname "$0")"; pwd)
+parent_dir=$(dirname $(pwd))
+ADDI_LDFLAGS ="-L${cur_dir}/lib  -lx264 -lfdk-aac"
+ADDI_CFLAGS ="-I${cur_dir}/include"
 #--------------------
 # Standard options:
 export COMMON_FF_CFG_FLAGS=
@@ -9,6 +12,11 @@ export COMMON_FF_CFG_FLAGS=
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-gpl"
 # export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-version3"
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-nonfree"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-libx264"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-libfdk-aac"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --extra-cflags=${ADDI_CFLAGS}"
+#export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --extra-cxxflags=ECFLAGS"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --extra-ldflags=${ADDI_LDFLAGS}"
 
 # Configuration options:
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-static"

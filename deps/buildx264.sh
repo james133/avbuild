@@ -3,5 +3,5 @@ parent_dir=$(dirname $(pwd))
 
 tar zxvf x264-master.tar.bz2
 cd x264-master
-./configure --prefix=${parent_dir}/release --enable-static --disable-shared
+./configure --prefix=${parent_dir}/release --enable-static
 make && make install

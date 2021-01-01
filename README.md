@@ -1,5 +1,6 @@
 1、编译说明
 brew install yasm
+brew install nasm
 sudo apt install yasm
 
 2、建立依赖包

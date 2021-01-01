@@ -5,5 +5,5 @@ parent_dir=$(dirname $(pwd))
 ./buildfadd2.sh 
 ./buildfdk-aac.sh 
 ./buildlame.sh
-./buildmp4v2.sh 
+#./buildmp4v2.sh 
 ./buildx264.sh 

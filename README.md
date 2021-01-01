@@ -3,7 +3,7 @@ brew install yasm
 brew install nasm
 sudo apt install yasm
 
-2、建立依赖包
+2、建立依赖包支持x264，fdk-aac等编码包
 ./builddeps.sh
 
 3、拷贝ffmpeg压缩包到当前目录下,默认文件为

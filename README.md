@@ -1,7 +1,7 @@
 1、编译说明
 brew install yasm
 brew install nasm
-sudo apt install yasm
+sudo apt install yasm nasm
 
 2、建立依赖包支持x264，fdk-aac等编码包
 ./builddeps.sh

@@ -1,6 +1,17 @@
-编译说明
+1、编译说明
 brew install yasm
 sudo apt install yasm
+
+2、建立依赖包
+./builddeps.sh
+
+3、拷贝ffmpeg压缩包到当前目录下,默认文件为
+ffmpeg-4.3.1.tar.bz2
+
+4、执行建立指令
+./build.sh
+
+5、老的建立编译说明
 
 在mac跨平台编译,定制配置文件名为config.sh
 配置FFSRC环境变量

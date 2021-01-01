@@ -3,8 +3,8 @@ parent_dir=$(dirname $(pwd))
 
 tar zxvf fdk-aac-0.1.6.tar.gz
 cd fdk-aac-0.1.6
-./configure --prefix=${parent_dir}/release  --enable-static --disable-shared
+CXXFLAGS="-fPIC" ./configure --prefix=${parent_dir}/release  --enable-static --disable-shared 
 make && make install
 
-./configure  --prefix=/usr --enable-static --disable-shared
+CXXFLAGS="-fPIC" ./configure  --prefix=/usr --enable-static --disable-shared
 make && make install

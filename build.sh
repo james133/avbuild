@@ -10,5 +10,6 @@ else
    echo "please downlaod ffmpeg-4.3.1.tar.bz2 http://www.ffmpeg.org/download.html"
    exit
 fi
+export PKG_CONFIG_PATH=${cur_dir}/lib/pkgconfig
 export FFSRC=${cur_dir}/ffmpeg-4.3.1
 ./avbuild.sh
